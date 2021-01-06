@@ -1,0 +1,166 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  height: 90vh;
+  width: 100%;
+  background-color: #102027;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.colock {
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.rank {
+  background-color: white;
+  position: absolute;
+  border: 1px solid black;
+  width: 30vh;
+  height: 185px;
+  top: 5px;
+  right: 0px;
+}
+
+.game {
+  width: 99%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.pepole {
+  width: 20px;
+  height: 50px;
+  line-height: 70px;
+  position: relative;
+  top: 150px;
+  left: 50px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.pepole .fa-running {
+  margin-bottom: 0px;
+}
+
+.jump {
+  animation-name: jump;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: 80px;
+  }
+  70% {
+    top: 80px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+.sliding {
+  animation-name: sliding;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sliding {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  70% {
+    transform: rotate(100deg);
+    margin-left: 0;
+  }
+  90% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(100deg);
+    top: 170px;
+  }
+}
+
+.block {
+  width: 20px;
+  height: 20px;
+  color: black;
+  position: relative;
+  top: 130px;
+  left: 90%;
+  right: 100px;
+  animation-name: block;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes block {
+  0% {
+    right: 0px;
+  }
+  25% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+
+  50% {
+    transform: rotate(200deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    left: 0px;
+  }
+}
+
+.block_2 {
+  width: 20px;
+  height: 20px;
+  color: black;
+  position: absolute;
+  top: 64vh;
+  left: 90%;
+  right: 100px;
+  animation-name: block_2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes block_2 {
+  0% {
+    transform: rotate(100deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    left: 0px;
+  }
+}
