@@ -1,88 +1,166 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
-  background-color: #102027;
-  color: white;
-  width: 99%;
   height: 90vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 40px;
-  font-family: "Kreon", serif;
-  font-weight: bolder;
+  width: 100%;
+  background-color: #102027;
 }
 
 .main {
-  width: 99%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main .js-clock {
-  line-height: 0px;
-}
-
-.js-weather {
-  line-height: 30px;
-  font-size: 25px;
-}
-
-.main input {
-  border: none;
-  width: 200px;
-  height: 20px;
-  border-radius: 10px;
-}
-
-input:focus {
-  outline: none;
-}
-
-.form,
-.greetings {
-  display: none;
-}
-
-.showing {
-  display: block;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  animation: fadeIn 0.5s linear;
 }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-size: 20px;
-}
-li {
-  margin: 10px;
-  list-style: none;
+.colock {
+  font-size: 40px;
+  color: aliceblue;
 }
 
-button {
-  background-color: #f1f1f1;
+.rank {
+  background-color: white;
+  position: absolute;
+  border: 1px solid black;
+  width: 30vh;
+  height: 185px;
+  top: 5px;
+  right: 0px;
+}
+
+.game {
+  width: 99%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.pepole {
+  width: 20px;
+  height: 50px;
+  line-height: 70px;
+  position: relative;
+  top: 150px;
+  left: 50px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.pepole .fa-running {
+  margin-bottom: 0px;
+}
+
+.jump {
+  animation-name: jump;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: 80px;
+  }
+  70% {
+    top: 80px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+.sliding {
+  animation-name: sliding;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sliding {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  70% {
+    transform: rotate(100deg);
+    margin-left: 0;
+  }
+  90% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(100deg);
+    top: 170px;
+  }
+}
+
+.block {
+  width: 20px;
+  height: 20px;
   color: black;
-  font-size: 10px;
-  margin-left: 5px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
+  position: relative;
+  top: 130px;
+  left: 90%;
+  right: 100px;
+  animation-name: block;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes block {
+  0% {
+    right: 0px;
+  }
+  25% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+
+  50% {
+    transform: rotate(200deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    left: 0px;
+  }
+}
+
+.block_2 {
+  width: 20px;
+  height: 20px;
+  color: black;
+  position: absolute;
+  top: 64vh;
+  left: 90%;
+  right: 100px;
+  animation-name: block_2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes block_2 {
+  0% {
+    transform: rotate(100deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    left: 0px;
+  }
 }

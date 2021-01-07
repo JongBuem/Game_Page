@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="js/keyboard.js" defer></script>
+    <script src="js/gameOver.js" defer></script>
     <script src="js/clock.js" defer></script>
-    <script src="js/gretting.js" defer></script>
-    <script src="js/todo.js" defer></script>
-    <script src="js/bg.js" defer></script>
-    <script src="js/weather.js" defer></script>
+    <script src="js/rank.js" defer></script>
+    <script src="https://kit.fontawesome.com/9b79e876aa.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body">
     <div class="main">
-        <div class="js-clock">
-            <h1 class="js-tilte">00:00</h1>
-            <span class="js-weather"></span>
-            <h4 class="js-greetings greetings"></h4>
+        <h2 class="colock"></h2>
+        <div class="rank">
         </div>
-
-        <form action="" class="js-form form">
-            <input type="text" placeholder="What is your name?">
-        </form>
-        <form action="" class="js-toDoForm">
-            <input type="text" placeholder="Write a to do">
-        </form>
-        <ul class="js-toDoList"></ul>
+        <div class="game">
+            <div class="pepole "><i class="fas fa-running"></i></div>
+            <div class="block"><i class="fas fa-futbol"></i></div>
+            <div class="block_2"><i class="fas fa-futbol"></i></div>
+        </div>
     </div>
 </body>
 </html>
