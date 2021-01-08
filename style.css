@@ -5,16 +5,101 @@
 body {
   height: 90vh;
   width: 100%;
-  background-color: #102027;
+}
+
+.start {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: yellow;
+}
+
+.start .start_tile {
+  font-size: 45px;
+  width: 100%;
+  height: 200px;
+  text-shadow: 2px 2px red;
+}
+
+.start .start_tile h6 {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+}
+
+.start .start_tile h6:hover {
+  background-color: red; /* Green */
+  color: white;
+}
+
+.start .start_list h1 {
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.start_list h1:hover {
+  background-color: red; /* Green */
+  color: white;
+}
+
+.rankbox {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  bottom: 10px;
+  text-align: left;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.rankbox::-webkit-scrollbar {
+  display: none !important;
+}
+.rank {
+  width: 70%;
+  display: -webkit-box;
 }
 
 .main {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
+  background-color: #212121;
+}
+
+.arrowtext {
+  position: absolute;
+  color: white;
+  left: 13%;
+  top: 8%;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 40px;
+  background-color: white;
+  color: #212121;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  left: 10%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .colock {
@@ -22,20 +107,12 @@ body {
   color: aliceblue;
 }
 
-.rank {
-  background-color: white;
-  position: absolute;
-  border: 1px solid black;
-  width: 30vh;
-  height: 185px;
-  top: 5px;
-  right: 0px;
-}
-
 .game {
-  width: 99%;
+  width: 90%;
   height: 200px;
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: whitesmoke;
+  border-radius: 10px;
 }
 
 .pepole {
@@ -45,7 +122,6 @@ body {
   position: relative;
   top: 150px;
   left: 50px;
-  right: 10px;
   font-size: 30px;
 }
 
@@ -63,8 +139,11 @@ body {
   0% {
     top: 150px;
   }
-  50% {
+  40% {
     top: 80px;
+  }
+  50% {
+    top: 70px;
   }
   70% {
     top: 80px;
@@ -106,7 +185,7 @@ body {
   color: black;
   position: relative;
   top: 130px;
-  left: 90%;
+  left: 100%;
   right: 100px;
   animation-name: block;
   animation-duration: 4s;
@@ -140,11 +219,11 @@ body {
   width: 20px;
   height: 20px;
   color: black;
-  position: absolute;
-  top: 64vh;
-  left: 90%;
+  position: relative;
+  top: 80px;
+  left: 100%;
   right: 100px;
-  animation-name: block_2;
+  animation-name: block;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -163,4 +242,24 @@ body {
     transform: rotate(360deg);
     left: 0px;
   }
+}
+
+.gamepage {
+  display: none;
+}
+
+.page_back {
+  display: none;
+}
+
+.list {
+  display: none;
+}
+
+.fa-caret-square-up.up {
+  color: red;
+}
+
+.fa-caret-square-down.down {
+  color: red;
 }
