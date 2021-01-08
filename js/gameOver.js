@@ -7,7 +7,7 @@ const block_2Over = document.querySelector('.block_2');
 const blockOverBom = setInterval(()=>{
   const pepoleTop = parseInt(window.getComputedStyle(pepoleOver).getPropertyValue("top"));
   const blockLeft = parseInt(window.getComputedStyle(blockOver).getPropertyValue("left"));   
-  if(blockLeft<70 && blockLeft>40 && pepoleTop==150 ){
+  if(blockLeft<70 && pepoleTop>=150 ){
     gameOver();
   }  
 },10);
@@ -15,12 +15,13 @@ const blockOverBom = setInterval(()=>{
 const block_2OverBom = setInterval(()=>{
   const pepoleTop = parseInt(window.getComputedStyle(pepoleOver).getPropertyValue("top"));
   const blockLeft = parseInt(window.getComputedStyle(block_2Over).getPropertyValue("left"));
-  if(blockLeft<70 && blockLeft>40 && pepoleTop==150 ){
+  if(blockLeft<70 && pepoleTop<=150){
     gameOver();
-  } else if(blockLeft<70 && blockLeft>40 && pepoleTop>150 && pepoleTop < 80){
+  } else if(blockLeft<70 &&  pepoleTop > 150 && pepoleTop < 80){
     gameOver();
   } 
 },10);
+
 
 function gameOver(){
   blockOver.style.animation = 'none';
