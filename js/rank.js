@@ -3,7 +3,6 @@ const rank = document.querySelector('.rank');
 let array =[];
 let tmep;
 
-
 function rankSwap(array) {                          // 배열을정렬 하기위해서
     let newArray=[];                                // 기존배열을 담을 새로운배열
     for(let i=0; i<array.length; i++){              // 모든 배열값
@@ -25,7 +24,7 @@ function rankArray(){                               // localStorage정보를 배
     for(let i=0; i<localStorage.length; i++) {      // localStorage정보의 수만큼 반복
         const key = localStorage.key(i);            // 해당 인덱스의 key를 변수로 저장
         const value = localStorage.getItem(key);    // 해당 key의 값을 변수로 저장
-        array[i] = `${value} : ${key}`;             // localStorage정보를 배열로 저장
+        array[i] = `${value} ---- ${key}`;          // localStorage정보를 배열로 저장
     }
     rankSwap(array);
 }
