@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>a.ball</title>
     <script src="js/keyboard.js" defer></script>
     <script src="js/gameOver.js" defer></script>
     <script src="js/rank.js" defer></script>
     <script src="js/start.js" defer></script>
+    <script src="js/random.js"></script>
     <script src="https://kit.fontawesome.com/9b79e876aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body class="body">
 
-    <div class="start">
+    <div class="start">                         <!--시작화면-->
         <div class="start_tile">
             <h1>a.ball</h1>
             <h6 class="mainbtn">main</h6>
         </div>
-
         <div class="rankbox list">
             <div class="rank"></div>
         </div>
@@ -28,17 +29,23 @@
         </div>
     </div>
 
-    <div class="gamepage main">
-        <h2 class="arrowtext">Key</h2>
-        <div class="arrow">
+    <div class="gamepage main">                 <!--게임화면-->
+        <h2 class="keytext">Key</h2>
+        <div class="key">
             <div><i class="far fa-caret-square-up"></i></div>
             <div><i class="far fa-caret-square-down"></i></div>
         </div>
         <h2 class="colock"></h2>
         <div class="game">
-            <div class="pepole "><i class="fas fa-running"></i></div>
-            <div class="block"><i class="fas fa-futbol"></i></div>
-            <div class="block_2"><i class="fas fa-futbol"></i></div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border item">
+                <div class="pepole "><i class="fas fa-running"></i></div>
+                <div class="block"><i class="fas fa-futbol"></i></div>
+                <div class="block_2"><i class="fas fa-futbol"></i></div>
+                <div class="block_3"><i class="fas fa-futbol"></i></div>
+            </div>
         </div>
     </div>
 </body>

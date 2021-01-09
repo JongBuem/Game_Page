@@ -1,249 +1,195 @@
+:root {
+  --background-color: yellow;
+  --color--red: red;
+  --color--white: white;
+  --color--gray: #212121;
+  --color--black: black;
+  --font-style: "Secular One";
+  --font-size-large: 55px;
+  --font-size-medium: 40px;
+  --margin: 20px;
+  --radius: 10px;
+  --border--height: 50px;
+  --imge-size: 30px;
+  --pepole-size: 40px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
-}
-body {
-  height: 90vh;
-  width: 100%;
 }
 
 .start {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  background-color: yellow;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color);
 }
 
 .start .start_tile {
-  font-size: 45px;
   width: 100%;
   height: 200px;
-  text-shadow: 2px 2px red;
+  margin-bottom: 50px;
+  font-size: var(--font-size-large);
+  text-shadow: 2px 2px var(--color--red);
 }
 
 .start .start_tile h6 {
   cursor: pointer;
   transition-duration: 0.3s;
-  border-radius: 10px;
+  border-radius: var(--radius);
 }
 
 .start .start_tile h6:hover {
-  background-color: red; /* Green */
-  color: white;
+  color: var(--color--white);
+  background-color: var(--color--red);
 }
 
 .start .start_list h1 {
-  margin: 20px;
-  border-radius: 20px;
   cursor: pointer;
   transition-duration: 0.3s;
+  margin: var(--margin);
+  border-radius: var(--radius);
+  font-family: var(--font-style);
+  font-size: var(--font-size-medium);
 }
 
-.start_list h1:hover {
-  background-color: red; /* Green */
-  color: white;
+.start .start_list h1:hover {
+  color: var(--color--white);
+  background-color: var(--color--red);
 }
 
 .rankbox {
   display: flex;
-  justify-content: center;
-  background-color: white;
   position: absolute;
   width: 30%;
   height: 50%;
   bottom: 10px;
   text-align: left;
-  border-radius: 10px;
+  justify-content: center;
+  border-radius: var(--radius);
+  background-color: var(--color--white);
+  font-family: "Secular One";
+  font-size: 20px;
   overflow-y: scroll;
 }
 
 .rankbox::-webkit-scrollbar {
   display: none !important;
 }
-.rank {
-  width: 70%;
-  display: -webkit-box;
-}
 
 .main {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
-  background-color: #212121;
+  background-image: url("img/bg.jpg");
+  background-size: 700px;
 }
 
-.arrowtext {
+.main .keytext {
   position: absolute;
-  color: white;
   left: 13%;
   top: 8%;
+  color: var(--color--white);
 }
 
-.arrow {
+.main .key {
   position: absolute;
-  font-size: 40px;
-  background-color: white;
-  color: #212121;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100px;
   height: 100px;
   left: 10%;
   top: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: var(--color--gray);
+  border-radius: var(--radius);
+  font-size: var(--font-size-medium);
+  background-color: var(--color--white);
 }
 
-.colock {
-  font-size: 40px;
-  color: aliceblue;
+.main .colock {
+  color: var(--color--white);
+  font-family: var(--font-style);
+  font-size: var(--font-size-large);
 }
 
-.game {
-  width: 90%;
+.main .game {
+  width: 80%;
   height: 200px;
-  border: 1px solid white;
-  background-color: whitesmoke;
-  border-radius: 10px;
+  border-radius: var(--radius);
+  background-color: var(--color--white);
+  background-image: url(img/bgg.png);
+  background-size: var(--border--height);
+}
+
+.main .game .border {
+  display: flex;
+  height: var(--border--height);
 }
 
 .pepole {
-  width: 20px;
-  height: 50px;
-  line-height: 70px;
   position: relative;
-  top: 150px;
-  left: 50px;
-  font-size: 30px;
-}
-
-.pepole .fa-running {
-  margin-bottom: 0px;
-}
-
-.jump {
-  animation-name: jump;
-  animation-duration: 700ms;
-  animation-iteration-count: infinite;
-}
-
-@keyframes jump {
-  0% {
-    top: 150px;
-  }
-  40% {
-    top: 80px;
-  }
-  50% {
-    top: 70px;
-  }
-  70% {
-    top: 80px;
-  }
-  100% {
-    top: 150px;
-  }
-}
-
-.sliding {
-  animation-name: sliding;
-  animation-duration: 800ms;
-  animation-iteration-count: infinite;
-}
-
-@keyframes sliding {
-  0% {
-    transform: rotate(50deg);
-  }
-  50% {
-    transform: rotate(100deg);
-  }
-  70% {
-    transform: rotate(100deg);
-    margin-left: 0;
-  }
-  90% {
-    transform: rotate(100deg);
-  }
-  100% {
-    transform: rotate(100deg);
-    top: 170px;
-  }
+  right: 0px;
+  left: 10%;
+  top: 0px;
+  font-size: var(--pepole-size);
 }
 
 .block {
+  position: relative;
   width: 20px;
   height: 20px;
-  color: black;
+  top: 0px;
+  left: 90%;
+  color: var(--ball-color);
+  font-size: var(--imge-size);
+  animation: block infinite linear forwards 1s;
+}
+
+.block_2 {
   position: relative;
-  top: 130px;
-  left: 100%;
-  right: 100px;
-  animation-name: block;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: 90%;
+  color: var(--ball-color);
+  font-size: var(--imge-size);
+  animation: block infinite linear forwards 2s;
+}
+
+.block_3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: 90%;
+  color: var(--ball-color);
+  font-size: var(--imge-size);
+  animation: block infinite linear forwards 3s;
 }
 
 @keyframes block {
   0% {
-    right: 0px;
-  }
-  25% {
-    transform: rotate(100deg);
+    left: 90%;
   }
   50% {
-    transform: rotate(100deg);
-  }
-
-  50% {
-    transform: rotate(200deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-    left: 0px;
-  }
-}
-
-.block_2 {
-  width: 20px;
-  height: 20px;
-  color: black;
-  position: relative;
-  top: 80px;
-  left: 100%;
-  right: 100px;
-  animation-name: block;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes block_2 {
-  0% {
-    transform: rotate(100deg);
-    right: 0px;
-  }
-  50% {
-    transform: rotate(200deg);
+    left: 50%;
   }
   100% {
-    transform: rotate(360deg);
-    left: 0px;
+    left: 0%;
   }
 }
 
+/*동적 움직임*/
 .gamepage {
   display: none;
 }
