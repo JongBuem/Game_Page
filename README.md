@@ -1,6 +1,6 @@
-# a.ball_game
+# a.ball_game 5px :soccer:
 
-> 홈페이지주소 : [https://jongbuem.github.io/Game_Page/](https://jongbuem.github.io/Game_Page/) :soccer:
+> 홈페이지주소 : [https://jongbuem.github.io/Game_Page/](https://jongbuem.github.io/Game_Page/)
 
 ## **목차**
 
