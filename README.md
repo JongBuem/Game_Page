@@ -10,6 +10,7 @@
 - 문제해결
 
 ## **1. 동작화면**
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/75786010/104134550-abc2bf00-53cd-11eb-910c-4539837cc3bc.gif)
 
 ## **2. 주요기능**
 
