@@ -291,7 +291,7 @@ init();
 <img width="200px" height="200px" src="https://user-images.githubusercontent.com/75786010/104137578-3cef6100-53e1-11eb-8b86-ac28d8ef0081.JPG"></img>
 
 ---
-실행환경
+### 실행환경
 - [ ] Internet Explorer :poop:
 - [x] Chrome  :thumbsup:
 - [x] Edge    :thumbsup:
