@@ -229,7 +229,7 @@ let array = [];
 let tmep;
 
 function rankSwap(array) {                        // 배열을정렬 하기위해서
-  let newArray = []; // 기존배열을 담을 새로운배열
+  let newArray = [];                              // 기존배열을 담을 새로운배열
   for (let i = 0; i < array.length; i++) {        // 모든 배열값
     for (let j = 0; j < array.length; j++) {      // 모든 배열의 자리를
       if (array[j] < array[j + 1]) {              // 버블정렬을 이용하여 내림차숨 정렬
