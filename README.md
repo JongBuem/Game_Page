@@ -146,7 +146,7 @@ function gameOver() {
   blockTwo.style.display = "none";
   blockThree.style.animation = "none";
   blockThree.style.display = "none";    // 공1~3의 모션과 존재를 지움
-  history.go(0); // 새로고침
+  history.go(0);                        // 새로고침
   gameOverAlert();                      // 경고창을 불러오는 함수
 }
 ```
@@ -175,15 +175,14 @@ function BallOne() {
   ballOne.style.top = topArray[random] + "px";    // 공1의 높이를 배열과 랜덤함수를통해 지정
 }
 
-function start() {
-  // start 클릭시 화면전환과 게임시작
+function start() {                                // start 클릭시 화면전환과 게임시작
   startpage.classList.add("page_back");
   gamepage.classList.remove("gamepage");
-  getClock(); // 시간함수 호출
-  setInterval(getClock, 1000);                     // 1초마다 갱신하기위함
-  setInterval(BallOne, 1020);                      // 1초마다 공1의 위치갱신
-  setInterval(BallTwo, 2020);                      // 2초마다 공2의 위치갱신
-  setInterval(BallThree, 3020);                    // 3초마다 공3의 위치갱신
+  getClock();                                     // 시간함수 호출
+  setInterval(getClock, 1000);                    // 1초마다 갱신하기위함
+  setInterval(BallOne, 1020);                     // 1초마다 공1의 위치갱신
+  setInterval(BallTwo, 2020);                     // 2초마다 공2의 위치갱신
+  setInterval(BallThree, 3020);                   // 3초마다 공3의 위치갱신
 }
 
 function init() {
@@ -207,7 +206,7 @@ function getClock() {                                 // 스타트버튼과 함�
   if (seconds < 59) {                                 // 58초에서
     seconds = seconds + 1;                            // 1을더하고
   } else if (seconds == 59) {                         // 59초가 되었을때
-    seconds = 0; // 초를 0으로 초기화
+    seconds = 0;                                      // 초를 0으로 초기화
     minutes = minutes + 1;                            // 1분 추가
   }
   clock.innerText =                                   // 경과시간을 화면에 출력
@@ -245,8 +244,7 @@ function rankSwap(array) {                        // 배열을정렬 하기위�
   rank.innerText = arrayText;                     // 배열에 모든값을 화면에 출력
 }
 
-function rankArray() {
-  // localStorage정보를 배열로 전환
+function rankArray() {                            // localStorage정보를 배열로 전환
   for (let i = 0; i < localStorage.length; i++) {
                                                   // localStorage정보의 수만큼 반복
     const key = localStorage.key(i);              // 해당 인덱스의 key를 변수로 저장
