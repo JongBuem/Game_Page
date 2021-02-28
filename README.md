@@ -284,9 +284,9 @@ init();
 
 ## **5. 사용기술**
 
-<img width="200px" height="200px" src="https://user-images.githubusercontent.com/75786010/104137550-03b6f100-53e1-11eb-8985-7b785e6071bf.JPG"></img>
-<img width="200px" height="200px" src="https://user-images.githubusercontent.com/75786010/104137565-20532900-53e1-11eb-8f6e-d39efeaf9285.JPG"></img>
-<img width="200px" height="200px" src="https://user-images.githubusercontent.com/75786010/104137578-3cef6100-53e1-11eb-8b86-ac28d8ef0081.JPG"></img>
+<img width="150px" height="150px" src="https://user-images.githubusercontent.com/75786010/104137550-03b6f100-53e1-11eb-8985-7b785e6071bf.JPG"></img>
+<img width="150px" height="150px" src="https://user-images.githubusercontent.com/75786010/104137565-20532900-53e1-11eb-8f6e-d39efeaf9285.JPG"></img>
+<img width="150px" height="150px" src="https://user-images.githubusercontent.com/75786010/104137578-3cef6100-53e1-11eb-8b86-ac28d8ef0081.JPG"></img>
 
 ---
 
